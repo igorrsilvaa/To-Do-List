@@ -26,10 +26,10 @@ body {
 
 .todo {
     display: flex;
-    width: 40vw;
+    width: 45vw;
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
+    margin: 3px auto;
     gap: 20px;
 }
 
@@ -43,7 +43,7 @@ body {
     margin-top: 20px;
     box-shadow: 1px 1px 2px var(--secondary-color);
     font-size: 1.8rem;
-    color: #E1E1E6;
+    color: #ffffff;
 }
 
 .todo__list {
@@ -59,9 +59,10 @@ body {
     height: 30px;
     justify-content: space-between;
     align-items: center;
-    padding: 3px;
+    padding: 5px;
+    margin-right: 2px;
     box-shadow: 1px 1px 2px black;
-    color: #E1E1E6;
+    color: #fcfcfc;
 }
 .todo__item > div {
     width: 100%;
@@ -78,40 +79,43 @@ body {
     border: none;
     width: 100%;
     font: roboto;
+    padding: 2px;
+    margin: 2px;
 }
 
+/*Botao cancelar o item*/
 .todo__item > input[type='button'],
 .todo__item > input[type='checkbox'] {
-    width: 40px;
-    height: 30x;
-    font: inherit;
+    width: 15px;
+    height: 15x;
 }
 
-
+/*açao para marcar como concluida a tarefa*/
 .todo__item > input[type='checkbox']:checked  + div {
     text-decoration:line-through;
 }
 
+
 .todo__new-item{
     display: flex;
-    width: 100%;
-    height: 30px;
-    justify-content: space-evenly;
-    padding: 2px;
-    box-shadow: 1px 1px 5px var(--secondary-color);
-    margin: 10px;
-    font: inherit;
+    width: 75%;
+    height: 35px;
+    justify-content: space-around;
+    padding: 3px;
+    margin: 5px;
 }
 
+/*Campo onde adiciono as novas tarefas*/
 .todo__new-item > input{
-    background-color: #f1f1ec;
+    background-color: #e4e4d2;
     border: none;
-    width: 100%;
+    width: 75%;
     outline: none;
-    font: inherit;
+    border-radius: 10px;
 }
+
 
 .todo__new-item > input::placeholder {
-    font-style: italic;
+    font-style: Roboto;
     font-weight: normal;
 }
